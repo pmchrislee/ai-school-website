@@ -1,6 +1,6 @@
-# AI School Website
+# AI School & Product Coach Labs Website
 
-A modern, responsive website for AI School - an online platform for learning Artificial Intelligence and Machine Learning.
+A modern, responsive website combining AI School (AI education platform) and Product Coach Labs (product management coaching services).
 
 ## Features
 
@@ -8,13 +8,13 @@ A modern, responsive website for AI School - an online platform for learning Art
 - **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
 - **Interactive Elements**: Smooth scrolling, animated sections, and form handling
 - **Comprehensive Sections**:
-  - Hero section with statistics
-  - Course listings
+  - Hero section highlighting both AI education and product coaching
+  - AI course listings
+  - Product coaching services
   - Features showcase
-  - Student testimonials
-  - About section
-  - Contact form
-  - Footer with links
+  - Collaborations/testimonials
+  - About section covering both services
+  - Contact form with service-specific options
 
 ## Getting Started
 
@@ -52,4 +52,20 @@ Works on all modern browsers:
 - Vanilla JavaScript
 - Google Fonts (Inter)
 
-Enjoy your AI School website! 🚀
+## Services Offered
+
+### AI School
+- Machine Learning Fundamentals
+- Deep Learning & Neural Networks
+- Natural Language Processing
+- Computer Vision
+- AI Ethics & Responsible AI
+- AI for Business
+
+### Product Coach Labs
+- Career Coaching
+- Product Strategy
+- AI Product Management
+- Executive Coaching
+
+Enjoy your combined AI School & Product Coach Labs website! 🚀

@@ -288,6 +288,73 @@ body {
     background: var(--bg-light);
 }
 
+/* Coaching Section */
+.coaching {
+    padding: 5rem 0;
+    background: var(--bg-white);
+}
+
+.coaching-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.coaching-card {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 2px solid var(--border-color);
+}
+
+.coaching-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.coaching-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.coaching-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.coaching-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.coaching-features {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+}
+
+.coaching-features li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.coaching-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -756,7 +823,8 @@ body {
 
     .courses-grid,
     .features-grid,
-    .testimonials-grid {
+    .testimonials-grid,
+    .coaching-grid {
         grid-template-columns: 1fr;
     }
 }

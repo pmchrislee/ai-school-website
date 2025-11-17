@@ -58,8 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const interestSelect = document.getElementById('interest');
             const interestText = interestSelect.options[interestSelect.selectedIndex].text;
             
+            // Determine service type based on interest
+            const serviceType = interestSelect.value.includes('coaching') || 
+                               interestSelect.value.includes('strategy') || 
+                               interestSelect.value.includes('ai-pm') || 
+                               interestSelect.value.includes('executive') 
+                               ? 'Product Coach Labs' : 'AI School';
+            
             // Create mailto link with form data
-            const subject = encodeURIComponent(`AI School Inquiry - ${interestText}`);
+            const subject = encodeURIComponent(`${serviceType} Inquiry - ${interestText}`);
             const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest Area: ${interestText}\n\nMessage:\n${message}`);
             const mailtoLink = `mailto:pmchrislee@gmail.com?subject=${subject}&body=${body}`;
             
@@ -110,7 +117,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.course-card, .feature-card, .testimonial-card');
+    const animateElements = document.querySelectorAll('.course-card, .feature-card, .testimonial-card, .coaching-card');
     
     animateElements.forEach(el => {
         el.style.opacity = '0';
