@@ -457,6 +457,22 @@ body {
     background: var(--bg-light);
 }
 
+.testimonials-subsection {
+    margin-bottom: 4rem;
+}
+
+.testimonials-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
